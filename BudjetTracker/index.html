@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget tracker</title>
+    <link rel="icon" type="images/x-icon" href="./images/favicon.ico">
+    <link rel="=stylesheet" href="./style.css">
+</head>
+<body>
+   <main>
+    <div class="outer-wrap">
+        <div class="inner-wrap">
+            <section class="heading">
+                <p class="title">MONTHLY FINANCES</p>
+                <p class="subtitle">Easy way t track your finances</p>
+            </section>
+            <section class="transaction-control">
+                <div class="actions">
+                    <h2>Add Transactions</h2>
+                    <form  class="add">
+                        <input type="text" name="source" placeholder="source" autocomplete="offf">
+                        <input type="number" name="amount" placeholder="amount" autocomplete="off">
+                        <input type="submit" name="" value="add transaction">
+                    </form>
+                </div>
+                <div class="stats">
+                    <h3> summary</h3>
+                    <p class="balance"> Balance: TZS <span id="balance"> 150000</span></p>
+                    <p class="income">Income: TZS <span id="income"> 15000</span></p>
+                    <p class="expense">Expense: TZS <span id="expense"> 10000</span></p>
+                </div>
+
+            </section>
+            <section class="transaction-history">
+                <h3>Transaction-History</h3>
+                <div class="income">
+                    <h3>Income</h3>
+                     <ul class="income-list">
+                        <li data-id="">
+                            <p><span>freelancing </span>
+                                <span>12:45:38 AM 5/19/2022</span>
+                            </p>
+                            <span>75000 TZS</span>
+                            
+                            <i class="bi bi-trash delete">  </i>
+                        </li>
+                     </ul>
+                </div>
+                <div class="expenses">
+                    <h3>Expenses</h3>
+                    <ul class="expense-list">
+                        <li data-id="">
+                            <p><span>data </span>
+                                <span>12:45:38 AM 5/19/2022</span>
+                            </p>
+                            <span>15000 TZS</span>
+                            
+                            <i class="bi bi-trash delete">  </i>
+                        </li>
+                    </ul>
+                </div>
+                
+            </section>
+
+        </div>
+    </div>
+   </main>
+</body>
+</html> 
